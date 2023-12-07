@@ -2,7 +2,7 @@
 /**
  * Este formulario envía la información a la variable $_POST de este mismo documento.
  * action="" en la etiqueta <form> equivale a enviar la informacion a este mismo documento, pero no se recomienda pues muchos navegadores no saben interpretarlo.
- * El metodo recomendado es usar la funcion: <?php echo $_SERVER['PHP_SELF']; ?> para recuperar dinamicamente el nombre del documento actual.
+ * El metodo recomendado es usar la funcion: <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> para recuperar dinamicamente el nombre del documento actual y agregar seguridad contra inyeccion de scripting HTML.
  */
     if($_POST){
         echo $_POST['nombre'];
@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>Form POST - SELF</h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
         <input type="text" placeholder="Your Name" name="nombre">
         <br>
         <!-- el "id" debe corresponder con el 'for' del label para que se relacionen entre si -->

@@ -17,7 +17,13 @@
 <body>
     <h1>Formularios</h1>
     <input type="button" onclick="window.location.href='form_post.php';" value="Formulario Post" />
+
     <input type="button" onclick="window.location.href='form_get.php';" value="Formulario Get" />
     <input type="button" onclick="window.location.href='form_self.php';" value="Formulario Self" />
+    <br><br>
+    <input type="button" onclick="window.location.href='form_valida_post.php';" value="Formulario Validar POST" />
+    <input type="button" onclick="window.location.href='form_valida_get.php';" value="Formulario Validar GET" />
+    <br><br>
+    <input type="button" onclick="window.location.href='form_valida_datos.php';" value="Formulario Valida Datos" />
 </body>
 </html>

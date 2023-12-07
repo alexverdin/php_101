@@ -1,12 +1,16 @@
 <?php
 /**
- * isset(); // Devuelve True si una variable tiene un valor asignado.
- * unset(); // Destruye una variable previamente definida.
+ * isset(VARIABLE); // Devuelve True si una variable tiene un valor asignado.
+ * unset(VARIABLE); // Destruye una variable previamente definida.
+ * empty(VARIABLE); // Devuelve true si la variable está declarada pero no tiene valor.
+ * stripslashes(STRING); // Elimina las diagonales invertidas (\) de una cadena de texto.
  * forEach( $ARRAY as $ELEMENT ); // Permite ejecutar una función por cada elemento de un array. En un array mixto (valores asociativos e indizados) el índice es tratado como el identificador.
+ * filter_var(STRING, Modificador); // Limpia una cadena de texto, según especifiquemos en el modificador. Para eliminar las etiquetas HTML, usaremos el parámetro FILTER_SANITIZE_STRING. (EJEMPLO: filter_var($variable, FILTER_SANITIZE_STRING);
  * var_dump(); // Nos muestra información acerca de nuestra variable (ubicación, tipo de dato, tamaño, valor, etc.).
  * print_r(); // Similar a var_dump(); pero con un formato más legible al humano.
  * die(); // Detiene la ejecución del script en ese punto (similar a break), incluyendo etiquetas html.
- * header('Location: URL'); // Redirige al usuario a la URL definida, la palabra "Location" es necesaria (más información en la carpeta "Formularios")
+ * header('Location: URL'); // Redirige al usuario a la URL definida, la palabra "Location" es necesaria (más información en la carpeta "Formularios").
+ * <?php if(): ?> <etiquetas><si><verdadero> <?php endif; ?> //condicional con etiquetas html 
  */
 
 $saludo = 'hola';
