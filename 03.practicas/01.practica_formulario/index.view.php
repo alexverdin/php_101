@@ -11,11 +11,22 @@
 </head>
 <body>
     <div class='wrapper'>
+        <div>
+            <h2>Formulario</h2>
+        </div>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-            <input type="text" class="form-control" name="name" placeholder="Ingresa tu nombre" id="name">
-            <input type="text" class="form-control" name="mail" placeholder="Ingresa tu correo electronico" id="mail">
-            <textarea class="form-control" name="message" id="message">
-            </textarea>
+            <input type="text" class="form-control" name="name" placeholder="Ingresa tu nombre" value="<?php if(!$sended && isset($name)) echo $name?>">
+            <input type="text" class="form-control" name="mail" placeholder="Ingresa tu correo electronico" value="<?php if(!$sended && isset($name)) echo $mail?>">
+            <textarea class="form-control" name="message" placeholder="Escribe tu mensaje"><?php if(!$sended && isset($msg)) echo $msg; ?></textarea>
+
+            <?php if(!empty($errors)): ?>
+                <div class="alert error">
+                    <?php echo $errors; ?>
+                </div>
+            <?php elseif($sended): ?>
+                <div class="alert success">Formulario enviado correctamente.</div>
+            <?php endif ?>
+            <input type="submit" name="submit-form" value="Enviar" class="btn btn-primary">
         </form>
     </div>
 </body>
