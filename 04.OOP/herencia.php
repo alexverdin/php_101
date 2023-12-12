@@ -50,3 +50,4 @@ echo $alex->showInfo();
 
 $beto = new Person('Beto', 'beto@mail.com', 24, 'Mexico');
 echo $beto->showInfo();
+
