@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Formulario POST</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
         <!-- El "name" debe ser el mismo en ambos inputs para que permita seleccionar solo uno de ellos -->
         <label for="fem">Femenino</label>
         <input type="radio" name="gender" id="fem" value="female">
+        <input type="number" name="number" id="number">
         <br>
         <label for="year">Año de nacimiento: </label>
         <select name="year" selected="2000" id="year">

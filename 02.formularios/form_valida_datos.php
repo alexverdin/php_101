@@ -46,6 +46,7 @@ if(isset($_POST['submit-form-valida-datos'])){ // El usuario hizo clic en el sub
     <form action="<?php echo filter_var($_SERVER['PHP_SELF']); ?>" method="post">
         <input type="text" placeholder="Your Name" name="nombre" id="nombre">
         <input type="email" placeholder="Your e-mail" name="email" id="email">
+        <input type="number" placeholder="write a number" name="num" id="num">
 
         <!-- Muestra errores si los hubiera -->
         <?php if(!empty($errores)): ?>
