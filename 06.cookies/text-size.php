@@ -27,5 +27,6 @@ if(isset($_COOKIE['font-size'])){
     <p>
         <?php echo date('d/m/Y', time()+60*60*24*30); ?>
     </p>
+
 </body>
 </html>

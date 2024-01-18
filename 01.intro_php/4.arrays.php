@@ -30,11 +30,11 @@ $players = [
 ];
 
 $lifePlayer1 = $players[0]['lifepoints']; // 18
+$statusPlayer2 = $players[1]['status']; // 'stunned'
 $statusPlayer3 = $players[2]['status']; // 'frozen'
-$statusPlayer2 = $players[0]['status']; // 18
 echo '<br/>';
-echo 'Life ' . $players[0][0] . ': ' . $lifePlayer1 . '<br/>';
-echo 'Status ' . $players[1][0] . ': ' . $statusPlayer3 . '<br/>';
-echo 'Status ' . $players[2][0] . ': ' . $statusPlayer2 . '<br/>';
+echo 'Life ' . $players[0][0] . ': ' . $lifePlayer1 . '<br/>'; // Life player 1: 18
+echo 'Status ' . $players[1][0] . ': ' . $statusPlayer2 . '<br/>'; // Status player 2: stunned
+echo 'Status ' . $players[2][0] . ': ' . $statusPlayer3 . '<br/>'; // Status player 3: frozen
 
 ?>
